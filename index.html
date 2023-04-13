@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <main>
+      <form action="" data-main-form>
+        <div class="input-item-container">
+          <div class="input-item">
+            <label class="input-label" for="day">Day</label>
+            <input
+              data-day-input
+              class="text-input"
+              type="number"
+              placeholder="01"
+              maxlength="2"
+              novalidate
+              max="31"
+              required
+            />
+            <p class="error-txt" hidden>This field is required</p>
+          </div>
+          <div class="input-item">
+            <label class="input-label" for="month">Month</label>
+            <input
+              data-month-input
+              class="text-input"
+              type="number"
+              placeholder="01"
+              maxlength="2"
+              max="12"
+              required
+            />
+            <p class="error-txt" hidden>This field is required</p>
+          </div>
+          <div class="input-item">
+            <label class="input-label" for="year">Year</label>
+            <input
+              data-year-input
+              class="text-input"
+              type="number"
+              placeholder="2001"
+              min="1800"
+              maxlength="4"
+              required
+            />
+            <p class="error-txt" hidden>This field is required</p>
+          </div>
+        </div>
+        <button data-submit-btn type="submit" class="submit-btn">
+          <img src="assets/images/icon-arrow.svg" alt="down-arrow" />
+        </button>
+      </form>
+      <div class="output-container">
+        <h2 class="output-year">
+          <span class="output-year-number" data-year-output>--</span> years
+        </h2>
+        <h2 class="output-months">
+          <span class="output-months-number" data-month-output>--</span> months
+        </h2>
+        <h2 class="output-days">
+          <span class="output-days-number" data-day-output>--</span> days
+        </h2>
+      </div>
+    </main>
+  </body>
+</html>
