@@ -154,6 +154,7 @@ form {
 .output-days {
   color: var(--black-text);
   font-size: 5.5rem;
+  line-height: 120%;
 }
 
 @media (min-width: 1024px) {
